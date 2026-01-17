@@ -59,80 +59,85 @@ Copy code
 - DVWA security level set to **Low**  
 - Navigated to **XSS (Reflected)** module  
 - Tested payload:
-```html
+## Vulnerability Testing – XSS (Reflected)
+
+The following payload was tested on DVWA with the security level set to Low.
+
+Payload used:
 <script>alert(1)</script>
-XSS alert confirmed vulnerability
+
+Result:
+XSS alert popup appeared, confirming the vulnerability.
 
 Impact Validation Payload:
-
-html
-Copy code
 <script>alert(document.cookie)</script>
-Cookie disclosure confirmed successful exploitation
 
-6. Proof of Concept (PoC)
+Result:
+Cookie disclosure confirmed successful exploitation.
+
+---
+
+## Proof of Concept (PoC)
+
 Steps to reproduce:
+1. Login to DVWA using valid credentials
+2. Set security level to Low
+3. Navigate to XSS (Reflected) page
+4. Paste payload <script>alert(1)</script> and submit
+5. Observe alert popup
+6. Optional: Use <script>alert(document.cookie)</script> for cookie access
 
-Login to DVWA using valid credentials
+---
 
-Set security level to Low
+## Impact & Mitigation
 
-Navigate to XSS (Reflected) page
+Impact:
+- Execution of arbitrary JavaScript in a user’s browser
+- Cookie theft and possible session hijacking
+- Phishing and unauthorized actions in real-world applications
 
-Paste payload <script>alert(1)</script> and submit
+Mitigation:
+- Sanitize and validate all user input
+- Encode output before rendering
+- Use secure frameworks or libraries
+- Perform regular vulnerability testing
 
-Observe alert popup
+---
 
-Optional: Use <script>alert(document.cookie)</script> for cookie access
+## Screenshots
 
-7. Impact & Mitigation
-Impact
-Execution of arbitrary JavaScript in a user’s browser
-
-Cookie theft and session hijacking
-
-Phishing and unauthorized actions in real-world apps
-
-Mitigation
-Sanitize and validate all user input
-
-Encode output before rendering
-
-Use secure frameworks/libraries
-
-Perform regular vulnerability testing
-
-8. Screenshots
-Screenshots captured during testing:
-
-Security level set to Low
+Security level set to Low:
 <img width="751" height="552" alt="image" src="https://github.com/user-attachments/assets/8a36d8d5-b91f-435b-8050-b62ed2535826" />
 
-XSS alert popup
+XSS alert popup:
 <img width="501" height="127" alt="image" src="https://github.com/user-attachments/assets/bac5c858-05c2-480b-b8c4-61b3415e6383" />
 
-Cookie disclosure
+Cookie disclosure:
 <img width="538" height="202" alt="image" src="https://github.com/user-attachments/assets/2cd9f3ae-474b-41b0-8b7a-83ae806029f9" />
 
-All screenshots are available in the screenshots/ folder
+All screenshots are available in the screenshots/ folder.
 
-9. Report
+---
+
+## Report
+
 The full vulnerability report is provided in PDF format:
 bugbounty repo.pdf
 
-10. Author Information
-Name: Tooba Zainab
-Date: 16 January 2026
-Course: Cyber Security Lab
-Project: Bug Hunt 101 — Recon to Report
+---
+
+## Author Information
+
+Name: Tooba Zainab  
+Date: 16 January 2026  
+Course: Cyber Security Lab  
+Project: Bug Hunt 101 — Recon to Report  
 Target Application: DVWA (Damn Vulnerable Web Application)
 
-11. Notes
-All testing conducted in a controlled, local lab environment
+---
 
-Demonstrates full workflow from reconnaissance to professional reporting
+## Notes
 
-Strictly for educational purposes
-
-pgsql
-Copy code
+All testing was conducted in a controlled, local lab environment.  
+This project demonstrates the full workflow from reconnaissance to professional reporting.  
+Strictly for educational purposes.
