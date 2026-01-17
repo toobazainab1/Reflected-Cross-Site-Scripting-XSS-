@@ -9,10 +9,9 @@
 6. Proof of Concept  
 7. Impact & Mitigation  
 8. Screenshots  
-9. Report  
-10. Repository Structure  
-11. Author Information  
-12. Notes
+9. Report   
+10. Author Information  
+11. Notes
 
 ---
 
@@ -77,7 +76,7 @@ Cookie disclosure confirmed successful exploitation.
 
 ---
 
-## Proof of Concept (PoC)
+## 6. Proof of Concept (PoC)
 
 Steps to reproduce:
 1. Login to DVWA using valid credentials
@@ -89,7 +88,7 @@ Steps to reproduce:
 
 ---
 
-## Impact & Mitigation
+## 7. Impact & Mitigation
 
 Impact:
 - Execution of arbitrary JavaScript in a user’s browser
@@ -104,7 +103,7 @@ Mitigation:
 
 ---
 
-## Screenshots
+## 8. Screenshots
 
 Security level set to Low:
 
@@ -122,14 +121,14 @@ All screenshots are available in the screenshots/ folder.
 
 ---
 
-## Report
+## 9. Report
 
 The full vulnerability report is provided in PDF format:
 bugbounty repo.pdf
 
 ---
 
-## Author Information
+## 10. Author Information
 
 Name: Tooba Zainab  
 Date: 16 January 2026  
@@ -139,7 +138,7 @@ Target Application: DVWA (Damn Vulnerable Web Application)
 
 ---
 
-## Notes
+## 11. Notes
 
 All testing was conducted in a controlled, local lab environment.  
 This project demonstrates the full workflow from reconnaissance to professional reporting.  
