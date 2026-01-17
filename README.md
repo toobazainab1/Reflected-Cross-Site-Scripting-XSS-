@@ -18,7 +18,15 @@ This project demonstrates the end-to-end bug bounty workflow in a controlled lab
 - Web Browser
 
 ## Report
-The detailed vulnerability report with proof of concept, impact analysis, and screenshots is provided in PDF format:
+The detailed vulnerability report includes:
+
+- Step-by-step reproduction of the XSS vulnerability
+- Proof-of-concept payloads
+- Evidence screenshots
+- Impact analysis and recommendations
+
+📄 **View PDF:** bugbounty repo.pdf (uploaded)
+
 
 
 ## Disclaimer
