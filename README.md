@@ -107,12 +107,15 @@ Mitigation:
 ## Screenshots
 
 Security level set to Low:
-<img width="751" height="552" alt="image" src="https://github.com/user-attachments/assets/8a36d8d5-b91f-435b-8050-b62ed2535826" />
+
+<img width="751" height="552" alt="image" src="https://github.com/user-attachments/assets/d78e1115-0103-464c-9967-382978767809" />
 
 XSS alert popup:
+
 <img width="501" height="127" alt="image" src="https://github.com/user-attachments/assets/bac5c858-05c2-480b-b8c4-61b3415e6383" />
 
 Cookie disclosure:
+
 <img width="538" height="202" alt="image" src="https://github.com/user-attachments/assets/2cd9f3ae-474b-41b0-8b7a-83ae806029f9" />
 
 All screenshots are available in the screenshots/ folder.
