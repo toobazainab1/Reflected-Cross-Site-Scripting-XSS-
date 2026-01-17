@@ -20,7 +20,6 @@ This project demonstrates the end-to-end bug bounty workflow in a controlled lab
 ## Report
 The detailed vulnerability report with proof of concept, impact analysis, and screenshots is provided in PDF format:
 
-📄 **XSS_Report.pdf**
 
 ## Disclaimer
 This project was conducted strictly for educational purposes in a controlled lab environment.
